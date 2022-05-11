@@ -1,0 +1,31 @@
+/* body{
+   background: yellowgreen;
+} */
+
+.wrapper{
+    /* background: wheat; */
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1{
+    text-align: center;
+}
+
+.good{
+    align-items: center;
+}
+.hight{
+    height: 250px;
+}
+
+.gray{
+    background: lightgray;
+}
+.wolfimg{
+    width: 100px;
+    margin-left: 20px;
+}
+.radio{
+    display:flex;
+}

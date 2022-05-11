@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>art wolf!</title>
+</head>
+
+<body>
+   
+<div class="container">
+    <div class="wrapper">
+        <!-- header---------------------------- -->
+    <nav class="navbar navbar-expand-sm sticky-top navbar-dark bg-dark my-3">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav4"
+            aria-controls="navbarNav4" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <img class="wolfimg" src="img/art_wolf.png" alt="">
+        <a class="navbar-brand " href="#"><p class="display-4 mx-5">ART WOlf</p> </a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item active" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    <a class="nav-link display-6" href="#">ルール</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link display-6" href="#">アクセス</a>
+                </li> -->
+            </ul>
+        </div>
+    </nav>
+    <!-- h1------------------------------------ -->
+    <!-- Scrollable modal -->
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Launch static backdrop modal
+    </button> -->
+    
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">ルール説明</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ルール説明！
+                    <br>
+                    ①「お題」②「絵を描く」③「投票」の順番にゲームは進みます。<br>
+                    <br>
+                    ①お題<br>
+                    各プレイヤーにお題が出されます。プレイヤーは多数派と少数派に分かれます。
+                    例）多数派「犬」少数派「オオカミ」<br>
+                    自分が多数派か少数派かはわかりません。<br>
+                    <br>
+                    ②絵を描く<br>
+                    各プレイヤー出されたお題に対して絵で表現してもらいます。<br>
+                    制限時間は１分間で文字を書くことは禁止となっています。<br>
+                    <br>
+                    ③投票、トークタイム<br>
+                    各プレイヤーが描いた絵を見て、２分間トークしますプレイヤーは一人１票
+                    少数派（ウルフ）と思うプレイヤーに投票してもらいます。<br>
+                    一番投票数が多いかで勝敗が決定します。<br>
+                </div>
+                <div class="modal-footer">
+                  
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">わかりました！</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ルール------------------------------------------------- -->
+    <div class="row my-3">
+        <div class="col">
+            
+        </div>
+        <div class="col">
+            <h1 class="display-6">
+                <!-- アートウルフ -->
+            </h1>
+        </div>
+        <div class="col">
+           
+        </div>
+    </div>
+    <!-- プレイ人数ーーーーーーーーーーーーーーーーーーーーー -->
+    <div class="row my-3 ">
+        <div class="col-3">
+
+        </div>
+        <div class="col-6 text-center">
+            <h２>
+                プレイ人数（合計）
+            </h２>
+        </div>
+        <div class="col-3">
+
+        </div>
+    </div>
+    <!--  プレイ人数名前設定 ----------------------------->
+    
+    <div class="row">
+        <div class="col-4 display-6">
+            <button class="button" id="down">－</button>
+        </div>
+         <div class="col-4 display-6">
+            <input type="text" value="0" class="inputtext" id="textbox">
+        </div> 
+        <div class="col-4 display-6">
+            <button class="button" id="up">＋</button>
+        </div> 
+       
+        
+        
+
+    </div>
+    <button class="button resetbtn" id="reset">RESET</button>
+    <!-- <div class="row my-3">
+        <div class="col-4">
+    
+        </div>
+        <div class="col-1">
+        <button id="down" type="button" class="btn btn-primary btn-lg">-</button>
+        </div>
+        <div class="col-2">
+        <div id="textbox">1</div>
+        </div>
+        <div class="col-1">
+        <button id="up" type="button" class="btn btn-primary btn-lg">+</button>
+        
+        </div>
+        <div class="col-4">
+        <button type="button" class="btn btn-primary btn-lg">名前設定</button>
+        </div>
+    </div> -->
+    <!--  少数派多数派----------------------------------->
+    
+    <div class="gray">  
+    <!-- グレイに背景 -->
+   
+    <div class="container">
+        <div class="row my-3 text-center">
+            <div class="col-6 col-sm-3 display-6 "><p>少数派</p></div>
+            <div class="col-6 col-sm-3"></div>
+            <div class="col-3 col-sm-3 text-center"></div>
+            <div class="col-3 col-sm-3 text-center display-6"><p>多数派</p></div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-3 col-sm-2 text-center display-6">1</div>
+            <div class="col-3 col-sm-2 align-items-center"><button type="button" class="btn btn-primary btn-lg">＜</button></div>
+            <div class="col-6 col-sm-2 align-items-center"><button type="button" class="btn btn-primary btn-lg">＞</button></div>
+            <div class="col-6 col-sm-2 text-center display-6">2</div>
+        </div>
+        
+    </div>
+    <!--  少数派多数派ランダムチェック --------------------->
+    <div class="row my-3 justify-content-md-center">
+        <div class="col-3"> 
+    
+        </div>
+        <div class="col-3">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                <label class="form-check-label" for="flexCheckIndeterminate">
+                    少数派多数派をランダムで決める
+                </label>
+            </div>
+        </div>
+        <div class="col-3">
+    
+        </div>
+    </div>
+
+    </div>
+
+    <!--  お題の内容 ------------------------------------>
+    <div class="row my-3 justify-content-md-center">
+        <div class="col-3">
+    
+        </div>
+        <div class="col-3">
+            <p class="display-6">お題の内容</p>
+        </div>
+        <div class="col-3">
+    
+        </div>
+    </div>
+    <!--  子供向け大人向け選択 ---------------------------->
+    <div class="row my-3 ">
+        <div class="radio justify-content-md-center">
+            <div class="col-4"></div>
+            <div class="col-4 display-6">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    大人向け
+                </label>
+            </div>
+            </div>
+            <div class="col-4 display-6">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    子供向け
+                </label>
+            </div>
+           </div>
+            <div class="col-4"></div>
+        </div>
+        
+
+    </div>
+    <!--  大人向けの説明 --------------------------------->
+    <div class="row my-3 justify-content-md-center">
+        <div class="col">
+        </div>
+        <div class="col-3">
+            <p>大人向け：一般向けお題から子供向け問題を無くしたバーションです。</p>
+        </div>
+        <div class="col">
+        </div>
+    </div>
+    <!--  恋愛系チェックボックス -------------------------->
+    <div class="row my-3 justify-content-md-center">
+        <div class="col">
+            
+        </div>
+        <div class="col-3">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+            <label class="form-check-label" for="flexCheckIndeterminate">
+                恋愛系・・少しアダルト系な問題も出題する
+            </label>
+        </div>
+        <div class="col">
+        </div>
+    </div>
+     <!-- 問題を作る ---------------------------------- -->
+
+    <!-- <div class="gray">
+       
+    <div class="row my-3 justify-content-md-center">
+        <div class="col">
+        </div>
+        <div class="col-3">
+            <p>問題を作る</p>
+        </div>
+        <div class="col">
+        </div>
+    </div>
+     問題作成選択チェックボックス
+    <div class="row my-3 justify-content-md-center">
+        <div class="col-3">
+        <button type="button" class="btn btn-success btn-lg text-center">問題作成</button>
+        </div>
+        <div class="col-3">
+        <button type="button" class="btn btn-success btn-lg">問題編集</button>
+        </div>
+        <div class="col-3">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+            <label class="form-check-label" for="flexCheckIndeterminate">
+                作った問題で遊ぶ
+            </label>
+        </div>
+    </div>
+    </div> -->
+    <!--  スタート -------------------------------------->
+    <div class="row my-3 justify-content-md-center">
+        <div class="col">
+        </div>
+        <div class="col-3">
+        <button type="button" class="btn btn-success btn-lg ">スタート</button>
+        </div>
+        <div class="col">
+        </div>
+    </div>
+    <!--  広告 ----------------------------------------->
+    
+</div>
+
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script src="https://rawgit.com/jquery/jquery-ui/master/ui/i18n/datepicker-ja.js"></script>
+    <script>
+        // $("#plus").on("click",function() {
+        //         // let count = $('#count').val('');
+        //         let count = count + 1;
+        //         console.log(count);
+        //         $("#count").html(count);
+        //     });
+
+        // $("#mainus").click(function () {
+        //     let count = 1;
+        //     $("#count").html(count--);
+        // });
+
+
+    (() => {
+            //HTMLのid値を使って以下のDOM要素を取得
+            const downbutton = document.getElementById('down');
+            const upbutton = document.getElementById('up');
+            const text = document.getElementById('textbox');
+             const reset = document.getElementById('reset');
+
+            //ボタンが押されたらカウント減
+            downbutton.addEventListener('click', (event) => {
+                //0以下にはならないようにする
+                if (text.value >= 1) {
+                    text.value--;
+                }
+            });
+
+            //ボタンが押されたらカウント増
+            upbutton.addEventListener('click', (event) => {
+                text.value++;
+            })
+
+            ボタンが押されたら0に戻る
+            reset.addEventListener('click', (event) => {
+                text.value = 0;
+            })
+
+        })();
+
+
+    //   const tasu = $('#textbox').val();
+    //   console.log(tasu);
+
+    
+
+    </script>
+</body>
+
+</html>
