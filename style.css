@@ -29,3 +29,27 @@ h1{
 .radio{
     display:flex;
 }
+
+.s-red{
+    color: red;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+.p-word{
+    font-size: 1.5rem;
+}
+
+/* ARTの文字の色ーーーーーーーーーーーーーーーーーーーーーーーー */
+.col-red{
+    color: red;
+}
+.col-blue{
+    color: skyblue;
+}
+.col-yellow{
+    color: yellow;
+}
+
+.role{
+    background: lightgray;
+}
