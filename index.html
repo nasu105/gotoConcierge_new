@@ -114,7 +114,7 @@
             <button class="button" id="down">－</button>
         </div>
          <div class="col-4 display-6">
-            <input type="text" value="0" class="inputtext" id="textbox">
+            <input type="text" value="3" class="inputtext" id="textbox">
         </div> 
         <div class="col-4 display-6">
             <button class="button" id="up">＋</button>
@@ -328,7 +328,7 @@
             //ボタンが押されたらカウント減
             downbutton.addEventListener('click', (event) => {
                 //0以下にはならないようにする
-                if (text.value >= 1) {
+                if (text.value >= 4) {
                     text.value--;
                 }
             });
@@ -340,7 +340,7 @@
 
             ボタンが押されたら0に戻る
             reset.addEventListener('click', (event) => {
-                text.value = 0;
+                text.value = 3;
             })
 
         })();
