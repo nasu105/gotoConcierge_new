@@ -53,3 +53,16 @@ h1{
 .role{
     background: lightgray;
 }
+
+.minority {
+    outline: none;
+}
+.majority {
+    outline: none;
+}
+.minority_box {
+    background: none;
+}
+.majority_box{
+    background: none;
+}

@@ -64,12 +64,22 @@
                     <br>
                     ②絵を描く<br>
                     各プレイヤー出されたお題に対して絵で表現してもらいます。<br>
-                    制限時間は１分間で文字を書くことは禁止となっています。<br>
+                    1筆交代で、3周したら手を止めてください。又、文字を書くことは禁止となっています。<br>
                     <br>
                     ③投票、トークタイム<br>
-                    各プレイヤーが描いた絵を見て、２分間トークしますプレイヤーは一人１票
+                    各プレイヤーが描いた絵を見て、２分間トークします。プレイヤーは一人１票
                     少数派（ウルフ）と思うプレイヤーに投票してもらいます。<br>
                     一番投票数が多いかで勝敗が決定します。<br>
+                    <br>
+                    ④勝敗判定<br>
+                    •少数派（ウルフ）に投票が一番多ければ多数派（市民）の勝ち
+                    ただし、多数派のお題を当てれたら少数派の逆転勝ち<br>
+                    •多数派（市民）に一番投票が多ければ少数派（ウルフ）の勝ち<br>
+                    •２人以上が同数又は全員が違う人を投票した場合、サドンデス開始<br>
+                    １分間話し合いの後、再度投票<br>
+                    勝敗がつくまで繰り返す<br>
+
+
                 </div>
                 <div class="modal-footer">
                   
@@ -269,10 +279,14 @@
             <div class="col-2 col-sm-2 text-center display-6"><p>多数派</p></div>
         </div>
         <div class="row justify-content-center text-center">
-            <div class="col-2 col-sm-2 text-center display-6">1</div>
-            <div class="col-2 col-sm-2 align-items-center"><button type="button" class="btn btn-primary btn-lg">＜</button></div>
-            <div class="col-2 col-sm-2 align-items-center"><button type="button" class="btn btn-primary btn-lg">＞</button></div>
-            <div class="col-2 col-sm-2 text-center display-6">2</div>
+            <div class="col-2 col-sm-2 text-center display-6">
+                <input type="text" value="1" id="minority" style="border: none;" class="minority_box">
+            </div>
+            <div class="col-2 col-sm-2 align-items-center"><button type="button" class="btn btn-primary btn-lg" id="minority_btn">＜</button></div>
+            <div class="col-2 col-sm-2 align-items-center"><button type="button" class="btn btn-primary btn-lg" id="majority_btn">＞</button></div>
+            <div class="col-2 col-sm-2 text-center display-6">
+                <input type="text" value="2" id="majority" style="border: none;" class="majority_box">
+            </div>
         </div>
         
     </div>
@@ -438,24 +452,55 @@
             const downbutton = document.getElementById('down');
             const upbutton = document.getElementById('up');
             const text = document.getElementById('textbox');
-             const reset = document.getElementById('reset');
+            const reset = document.getElementById('reset');
+            const minority_text = document.getElementById('minority')
+            const majority_text = document.getElementById('majority')
 
             //ボタンが押されたらカウント減
             downbutton.addEventListener('click', (event) => {
                 //0以下にはならないようにする
                 if (text.value >= 4) {
                     text.value--;
-                }
+                    majority_text.value--;
+                } 
+
             });
 
             //ボタンが押されたらカウント増
             upbutton.addEventListener('click', (event) => {
-                text.value++;
+                // 9人以上にはならないようにする
+                if (text.value <= 7) {
+                    text.value++;
+                    majority_text.value++;
+                }
+
+
             })
 
             //ボタンが押されたら0に戻る
             reset.addEventListener('click', (event) => {
                 text.value = 3;
+                majority_text.value = 2;
+                minority_text.value = 1;
+            })
+
+            // 少数派ボタンを押すと増える
+            $('#minority_btn').on('click',function() {
+                let text_division = text.value / 2 - 1;
+                console.log(text_division);
+                if(Math.floor(minority_text.value) < text_division) {
+                    minority_text.value++;
+                    majority_text.value--;
+                }
+            });
+            // 多数派ボタン押すと増える
+            $('#majority_btn').on('click',function() {
+                let text_division = text.value / 2 - 1;
+                console.log(text_division);
+                if (Math.floor(majority_text.value) > text_division && Math.floor(majority_text.value) < text.value && Math.floor(minority_text.value) > 1) {
+                    majority_text.value++;
+                    minority_text.value--;
+                }
             })
 
 
