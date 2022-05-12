@@ -8,6 +8,7 @@
     margin: 0 auto;
 }
 
+
 h1{
     text-align: center;
 }
@@ -52,4 +53,30 @@ h1{
 
 .role{
     background: lightgray;
+}
+
+/* canvas-------------------------------------------------------- */
+.can_text a{
+    font-size: 2rem;
+}
+
+/* キャンバスのナビ----------------------------------------------------------- */
+.navbar h2{
+    color:yellow;
+    font-size: 2rem;
+}
+
+/*キャンバスの背景------------------------------------------------------------- */
+.wrapper2{
+    background-image: url(img/art3.jpg);
+    background: cover;
+}
+.canvas_back{
+    background: white;
+}
+
+/* フッターもじ-------------------------------------------------------------------------- */
+#discussion{
+    font-size: 1.5rem;
+    color: red;
 }

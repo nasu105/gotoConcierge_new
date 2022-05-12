@@ -222,7 +222,7 @@ $('#end').on('click', function () {
     $('#discussion').text(answer);
     // n秒後に投票ボタン現れる
     window.setTimeout(function () {
-        alert('koko');
+        alert('話し合い終了！誰がウルフか投票お願いします。');
     }, 2000);
 });
 /* ----------配列の中身をシャッフル---------- */

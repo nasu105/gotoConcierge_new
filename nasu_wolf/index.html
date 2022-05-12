@@ -1,27 +1,113 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>お絵かきアプリ</title>
+    <title>ART WOLF</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
-    <div>
-        <canvas id="canvas" style="border:1px solid gray;"></canvas>
+    <div class="container">
+    <div class="wrapper2">
+    <!-- ナビゲーション----------------------------------------------------------------------- -->
+        <nav class="navbar navbar-expand-sm sticky-top navbar-dark bg-dark my-3">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav4"
+                aria-controls="navbarNav4" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <img class="wolfimg" src="../img/art_wolf.png" alt="">
+            <a class="navbar-brand " href="#">
+                <p class="display-4 mx-5"><span class="col-red">A</span><span class="col-blue">R</span><span
+                        class="col-yellow">T</span> WOLF</p>
+            </a>
+            <h2>一筆書きでどこまで表現できるかな</h2>
+            <!-- <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item active" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <a class="nav-link display-6 text-warning" href="#">ルール</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link display-6" href="#">アクセス</a>
+                        </li>
+                </ul>
+            </div> -->
+        </nav>
+    
+    <!--ポップアップ表示ルール -->
+    <!-- <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="col-12 modal-title text-warning bg-secondary" id="staticBackdropLabel">ルール説明</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+    
+                    ルール説明！
+    
+    
+                    <br>
+                    ①「お題」②「絵を描く」③「投票」の順番にゲームは進みます。<br>
+                    <br>
+                    ①お題<br>
+                    各プレイヤーにお題が出されます。プレイヤーは多数派と少数派に分かれます。
+                    例）多数派「犬」少数派「オオカミ」<br>
+                    自分が多数派か少数派かはわかりません。<br>
+                    <br>
+                    ②絵を描く<br>
+                    各プレイヤー出されたお題に対して絵で表現してもらいます。<br>
+                    制限時間は１分間で文字を書くことは禁止となっています。<br>
+                    <br>
+                    ③投票、トークタイム<br>
+                    各プレイヤーが描いた絵を見て、２分間トークしますプレイヤーは一人１票
+                    少数派（ウルフ）と思うプレイヤーに投票してもらいます。<br>
+                    一番投票数が多いかで勝敗が決定します。<br>
+                </div>
+                <div class="modal-footer">
+    
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">わかりました！</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- キャンバススペース-------------------------------------------------------------------------- -->
+    
+    <div class="row justify-content-center">
+        <div class="col-5 canvas_back">
+            <canvas id="canvas" style="border:1px solid gray;"></canvas>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-5 can_text">
+            <button type="button" id="undo" class="btn btn-secondary btn-lg">全て消す</button>
+            <button type="button" id="end" class="btn btn-warning btn-lg">出来た！</button>
+            <a href="../index.html"> <button type="button" class="btn btn-outline-primary btn-lg">TOPへ</button></a>
+       
+        </div>
     </div>
     <div>
-        <input type="button" id="undo" name="クリア" value="ぜんけし">
-        <input type="button" id="end" name="end" value="できた">
+        </div>
+        
     </div>
-    <div>
-        <p id="discussion"></p>
+    <p id="discussion"></p>
     </div>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="./main.js"></script>p
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script src="https://rawgit.com/jquery/jquery-ui/master/ui/i18n/datepicker-ja.js"></script>
+    <script src="./main.js"></script>
+    <script>
+
+    </script>
 </body>
 
 </html>
