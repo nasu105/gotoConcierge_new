@@ -38,12 +38,9 @@
         </div>
     </nav>
     <!-- h1------------------------------------ -->
-    <!-- Scrollable modal -->
-    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-        Launch static backdrop modal
-    </button> -->
     
-    <!-- Modal -->
+    
+    <!--ポップアップ表示ルール -->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -79,20 +76,125 @@
         </div>
     </div>
 
-    <!-- ルール------------------------------------------------- -->
-    <div class="row my-3">
-        <div class="col">
-            
-        </div>
-        <div class="col">
-            <h1 class="display-6">
-                <!-- アートウルフ -->
-            </h1>
-        </div>
-        <div class="col">
-           
+    <!-- その１------------------------------------------------- -->
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+    </button> -->
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel1">１番目の方</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                 <div class="modal-body">
+                    <div class="dropdown">
+                        <div class="row">
+                            <a class="col btn btn-warning dropdown-toggle " href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <p class="">１番目の方のみ見てください</p> 
+                            </a>
+                            <ul class="dropdown-menu col-6 display-6" aria-labelledby="dropdownMenuLink">
+                                <p>あなたのお題は犬です</p>
+                                <div></div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#example_Modal">２番目の方へ</button>
+                    </div>
+                    
+                </div>
+                <div class="modal-footer">
+                    
+                </div>
+            </div>
         </div>
     </div>
+    <!-- その２------------------------------------------------- -->
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#example_Modal">
+        Launch demo modal
+    </button> -->
+    
+    <!-- Modal -->
+    <div class="modal fade" id="example_Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">２番目の方</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="dropdown">
+                        <div class="row">
+                        <a class="col btn btn-warning dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <p>２番目の方のみ見てください</p>        
+                        </a>
+                    
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <p>あなたのお題は犬です</p>
+                            <div></div>
+                        </ul>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                        ３番目の方へ
+                    </button>
+                </div>
+                <div class="modal-footer">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- その３------------------------------------------------- -->
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+        Launch demo modal
+    </button> -->
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">３番目の方</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="dropdown">
+                        <div class="row">
+                        <a class="col btn btn-warning dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <p>３番目の方のみ見てください</p>
+                            
+                        </a>
+                            
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <p>あなたのお題はオオカミです</p>
+                            <div></div>
+                        </ul>
+                        </div>
+                    </div>
+                    <a href="game.html">
+                    <button type="button" class="btn btn-primary" href='game.html' data-bs-toggle="modal">
+                        
+                        はじまり、はじまり
+                    </button>
+                    </a>
+                </div>
+                <div class="modal-footer">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <!-- プレイ人数ーーーーーーーーーーーーーーーーーーーーー -->
     <div class="row my-3 ">
         <div class="col-3">
@@ -114,7 +216,7 @@
             <button class="button" id="down">－</button>
         </div>
          <div class="col-4 display-6">
-            <input type="text" value="3" class="inputtext" id="textbox">
+            <input type="text" value="0" class="inputtext" id="textbox">
         </div> 
         <div class="col-4 display-6">
             <button class="button" id="up">＋</button>
@@ -149,17 +251,17 @@
     <!-- グレイに背景 -->
    
     <div class="container">
-        <div class="row my-3 text-center">
-            <div class="col-6 col-sm-3 display-6 "><p>少数派</p></div>
-            <div class="col-6 col-sm-3"></div>
-            <div class="col-3 col-sm-3 text-center"></div>
-            <div class="col-3 col-sm-3 text-center display-6"><p>多数派</p></div>
+        <div class="row my-3 justify-content-center text-center">
+            <div class="col-2 col-sm-2 display-6 "><p>少数派</p></div>
+            <div class="col-2 col-sm-2"></div>
+            <div class="col-2 col-sm-2 text-center"></div>
+            <div class="col-2 col-sm-2 text-center display-6"><p>多数派</p></div>
         </div>
-        <div class="row justify-content-md-center">
-            <div class="col-3 col-sm-2 text-center display-6">1</div>
-            <div class="col-3 col-sm-2 align-items-center"><button type="button" class="btn btn-primary btn-lg">＜</button></div>
-            <div class="col-6 col-sm-2 align-items-center"><button type="button" class="btn btn-primary btn-lg">＞</button></div>
-            <div class="col-6 col-sm-2 text-center display-6">2</div>
+        <div class="row justify-content-center text-center">
+            <div class="col-2 col-sm-2 text-center display-6">1</div>
+            <div class="col-2 col-sm-2 align-items-center"><button type="button" class="btn btn-primary btn-lg">＜</button></div>
+            <div class="col-2 col-sm-2 align-items-center"><button type="button" class="btn btn-primary btn-lg">＞</button></div>
+            <div class="col-2 col-sm-2 text-center display-6">2</div>
         </div>
         
     </div>
@@ -197,9 +299,9 @@
     </div>
     <!--  子供向け大人向け選択 ---------------------------->
     <div class="row my-3 ">
-        <div class="radio justify-content-md-center">
-            <div class="col-4"></div>
-            <div class="col-4 display-6">
+        <div class="radio justify-content-center">
+           
+            <div class="col-3 display-6">
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                 <label class="form-check-label" for="flexRadioDefault1">
@@ -207,7 +309,7 @@
                 </label>
             </div>
             </div>
-            <div class="col-4 display-6">
+            <div class="col-3 display-6">
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                 <label class="form-check-label" for="flexRadioDefault1">
@@ -215,7 +317,7 @@
                 </label>
             </div>
            </div>
-            <div class="col-4"></div>
+           
         </div>
         
 
@@ -274,15 +376,17 @@
     </div>
     </div> -->
     <!--  スタート -------------------------------------->
-    <div class="row my-3 justify-content-md-center">
-        <div class="col">
-        </div>
+    <div class="row my-3 justify-content-center">
+        
         <div class="col-3">
-        <button type="button" class="btn btn-success btn-lg ">スタート</button>
+        <!-- <button type="button" class="btn btn-success btn-lg ">スタート</button> -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            準備ができたらPUSH
+        </button>
         </div>
-        <div class="col">
-        </div>
+        
     </div>
+    
     <!--  広告 ----------------------------------------->
     
 </div>
