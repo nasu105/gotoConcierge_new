@@ -25,7 +25,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <img class="wolfimg" src="img/art_wolf.png" alt="">
-        <a class="navbar-brand " href="#"><p class="display-4 mx-5"><span class="col-red">A</span><span class="col-blue">R</span><span class="col-yellow">T</span> WOlf</p> </a>
+        <a class="navbar-brand " href="#"><p class="display-4 mx-5"><span class="col-red">A</span><span class="col-blue">R</span><span class="col-yellow">T</span> WOLF</p> </a>
         <div class="collapse navbar-collapse"> 
             <ul class="navbar-nav">
                 <li class="nav-item active" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
@@ -104,13 +104,13 @@
                                 </p> 
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <p class="p-word">あなたのお題は <span class="s-red">犬</span>です</p>
+                                <p class="p-word">あなたのお題は <span class="s-red" id="first_user">犬</span>です</p>
                                 <div></div>
                             </ul>
                         </div>
                     </div>
                     <div class="col">
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#example_Modal">２番目の方へ</button>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#example_Modal" id="second_quiz">２番目の方へ</button>
                     </div>
                     
                 </div>
@@ -146,12 +146,12 @@
                         </a>
                     
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <p class="p-word">あなたのお題は <span class="s-red">犬</span>です</p>
+                            <p class="p-word">あなたのお題は <span class="s-red" id="second_user">犬</span>です</p>
                             <div></div>
                         </ul>
                         </div>
                     </div>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3" id="tree_quiz">
                         ３番目の方へ
                     </button>
                 </div>
@@ -187,13 +187,13 @@
                         </a>
                             
                         <ul class="col dropdown-menu " aria-labelledby="dropdownMenuLink">
-                            <p class="p-word">あなたのお題は <span class="s-red">オオカミ</span>です</p>
+                            <p class="p-word">あなたのお題は <span class="s-red" id="tree_user">オオカミ</span>です</p>
                             <div></div>
                         </ul>
                         </div>
                     </div>
-                    <a href="game.html">
-                    <button type="button" class="btn btn-primary" href='game.html' data-bs-toggle="modal">
+                    <a href="nasu_wolf/index.html">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" id="changpage">
                         
                         はじまり、はじまり
                     </button>
@@ -391,7 +391,7 @@
         
         <div class="col-3">
         <!-- <button type="button" class="btn btn-success btn-lg ">スタート</button> -->
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="game_start">
             準備ができたらPUSH
         </button>
         </div>
@@ -453,16 +453,106 @@
                 text.value++;
             })
 
-            ボタンが押されたら0に戻る
+            //ボタンが押されたら0に戻る
             reset.addEventListener('click', (event) => {
                 text.value = 3;
             })
 
+
         })();
+
+        //  $('#textbox').change(function () {
+        //         let getNumber = $('#textbox').val();
+        //         console.log(getNumber);
+        //         //  console.log($(this).val());
+
+        //     });
+
+        // $('#up').on('click',function(){
+        //     let getNumber = $('#textbox').val();
+        //     console.log("")
+        // })
+
+        
+
+        
 
 
     //   const tasu = $('#textbox').val();
     //   console.log(tasu);
+    /* ----------配列の中身をシャッフル---------- */
+        //参考サイト'https://gray-code.com/javascript/shuffle-for-item-of-array/'
+        function arrayShuffle(array) {
+            for (let i = (array.length - 1); 0 < i; i--) {
+                // 0~(i+1)の範囲で値を取得
+                let r = Math.floor(Math.random() * (i + 1));
+                // 要素の並び替えを実行
+                let tmp = array[i];
+                array[i] = array[r];
+                array[r] = tmp;
+            }
+            return array;
+        }
+        /* let numbers = [1, 1, 2,];
+        
+        // 配列を1回シャッフルする
+        
+        for (let i = 0; i < 1; i++) {
+            console.log(arrayShuffle(numbers));
+        } */
+        // 問題文作成
+        const quiz = [
+            ['イヌ', 'イヌ', 'オオカミ'],
+            ['イヌ', 'オオカミ', 'オオカミ'],
+            ['スズメ', 'スズメ', 'ハチ'],
+            ['スズメ', 'ハチ', 'ハチ'],
+            ['ブタ', 'ブタ', 'イノシシ'],
+            ['ブタ', 'イノシシ', 'イノシシ'],
+            ['イケメン', 'イケメン', 'ブサイク'],
+            ['イケメン', 'ブサイク', 'ブサイク'],
+            ['UFO', 'UFO', 'ドローン'],
+            ['UFO', 'ドローン', 'ドローン'],
+            ['レスラー', 'レスラー', 'おすもうさん'],
+            ['レスラー', 'おすもうさん', 'おすもうさん'],
+            ['さくらんぼ', 'さくらんぼ', 'ぶどう'],
+            ['さくらんぼ', 'ぶどう', 'ぶどう'],
+            ['サッカーボール', 'サッカーボール', 'バレーボール'],
+            ['サッカーボール', 'バレーボール', 'バレーボール'],
+            ['ドーナツ', 'ドーナツ', 'うきわ'],
+            ['ドーナツ', 'うきわ', 'うきわ'],
+            ['サングラス', 'サングラス', 'ゴーグル'],
+            ['サングラス', 'ゴーグル', 'ゴーグル'],
+        ];
+        // pushボタン押すとイベント発生
+        $('#game_start').on('click', function () {
+            // console.log('nasu');
+            // 問題を1回だけランダムに表示
+            for (let i = 0; i < 1; i++) {
+                console.log(arrayShuffle(quiz));
+            }
+
+            const select_quiz = quiz[0];
+            // 多次元配列の中身をシャッフル
+            for (let i = 0; i < 1; i++) {
+                console.log(arrayShuffle(select_quiz));
+                console.log(arrayShuffle(select_quiz[[0]]));
+            }
+            // 1番目のお題を表示
+            $('#first_user').text(select_quiz[[0]]);
+
+            // 2番目の方へ押すとイベント発生
+            $('#second_quiz').on('click', function () {
+                // console.log('hai');
+                console.log(arrayShuffle(select_quiz[[1]]));
+                $('#second_user').text(select_quiz[[1]]);
+
+                // 3番目の方へ押すとイベント発生
+                $('#tree_quiz').on('click', function () {
+                    console.log(arrayShuffle(select_quiz[[2]]));
+                    $('#tree_user').text(select_quiz[[2]]);
+                });
+            });
+        });
 
     
 
