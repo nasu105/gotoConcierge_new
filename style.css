@@ -84,7 +84,7 @@ h1{
 }
 
 /* index.htmlの調整-------------------------------------------------------------------------------- */
-/* .minority {
+.minority {
     outline: none;
 }
 .majority {
@@ -95,4 +95,4 @@ h1{
 }
 .majority_box{
     background: none;
-} */
+}
