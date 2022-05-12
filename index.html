@@ -8,247 +8,256 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>art wolf!</title>
 </head>
 
 <body>
-   
-<div class="container">
-    <div class="wrapper">
-        <!-- header---------------------------- -->
-    <nav class="navbar navbar-expand-sm sticky-top navbar-dark bg-dark my-3">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav4"
-            aria-controls="navbarNav4" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <img class="wolfimg" src="img/art_wolf.png" alt="">
-        <a class="navbar-brand " href="#"><p class="display-4 mx-5"><span class="col-red">A</span><span class="col-blue">R</span><span class="col-yellow">T</span> WOLF</p> </a>
-        <div class="collapse navbar-collapse"> 
-            <ul class="navbar-nav">
-                <li class="nav-item active" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                    <a class="nav-link display-6 text-warning" href="#">ルール</a>
-                </li>
-                <!-- <li class="nav-item">
+
+    <div class="container">
+        <div class="wrapper">
+            <!-- header---------------------------- -->
+            <nav class="navbar navbar-expand-sm sticky-top navbar-dark bg-dark my-3">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav4"
+                    aria-controls="navbarNav4" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <img class="wolfimg" src="img/art_wolf.png" alt="">
+                <a class="navbar-brand " href="#">
+                    <p class="display-4 mx-5"><span class="col-red">A</span><span class="col-blue">R</span><span
+                            class="col-yellow">T</span> WOLF</p>
+                </a>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">
+                            <a class="nav-link display-6 text-warning" href="#">ルール</a>
+                        </li>
+                        <!-- <li class="nav-item">
                     <a class="nav-link display-6" href="#">アクセス</a>
                 </li> -->
-            </ul>
-        </div>
-    </nav>
-    <!-- h1------------------------------------ -->
-    
-    
-    <!--ポップアップ表示ルール -->
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="col-12 modal-title text-warning bg-secondary" id="staticBackdropLabel">ルール説明</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </ul>
                 </div>
-                <div class="modal-body">
-                    
-                        ルール説明！
-                
-                    
-                    <br>
-                    ①「お題」②「絵を描く」③「投票」の順番にゲームは進みます。<br>
-                    <br>
-                    ①お題<br>
-                    各プレイヤーにお題が出されます。プレイヤーは多数派と少数派に分かれます。
-                    例）多数派「犬」少数派「オオカミ」<br>
-                    自分が多数派か少数派かはわかりません。<br>
-                    <br>
-                    ②絵を描く<br>
-                    各プレイヤー出されたお題に対して絵で表現してもらいます。<br>
-                    1筆交代で、3周したら手を止めてください。又、文字を書くことは禁止となっています。<br>
-                    <br>
-                    ③投票、トークタイム<br>
-                    各プレイヤーが描いた絵を見て、２分間トークします。プレイヤーは一人１票
-                    少数派（ウルフ）と思うプレイヤーに投票してもらいます。<br>
-                    一番投票数が多いかで勝敗が決定します。<br>
-                    <br>
-                    ④勝敗判定<br>
-                    •少数派（ウルフ）に投票が一番多ければ多数派（市民）の勝ち
-                    ただし、多数派のお題を当てれたら少数派の逆転勝ち<br>
-                    •多数派（市民）に一番投票が多ければ少数派（ウルフ）の勝ち<br>
-                    •２人以上が同数又は全員が違う人を投票した場合、サドンデス開始<br>
-                    １分間話し合いの後、再度投票<br>
-                    勝敗がつくまで繰り返す<br>
+            </nav>
+            <!-- h1------------------------------------ -->
 
 
-                </div>
-                <div class="modal-footer">
-                  
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">わかりました！</button>
+            <!--ポップアップ表示ルール -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="col-12 modal-title text-warning bg-secondary" id="staticBackdropLabel">ルール説明</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+
+                            ルール説明！
+
+
+                            <br>
+                            ①「お題」②「絵を描く」③「投票」の順番にゲームは進みます。<br>
+                            <br>
+                            ①お題<br>
+                            各プレイヤーにお題が出されます。プレイヤーは多数派と少数派に分かれます。
+                            例）多数派「犬」少数派「オオカミ」<br>
+                            自分が多数派か少数派かはわかりません。<br>
+                            <br>
+                            ②絵を描く<br>
+                            各プレイヤー出されたお題に対して絵で表現してもらいます。<br>
+                            1筆交代で、3周したら手を止めてください。又、文字を書くことは禁止となっています。<br>
+                            <br>
+                            ③投票、トークタイム<br>
+                            各プレイヤーが描いた絵を見て、２分間トークします。プレイヤーは一人１票
+                            少数派（ウルフ）と思うプレイヤーに投票してもらいます。<br>
+                            一番投票数が多いかで勝敗が決定します。<br>
+                            <br>
+                            ④勝敗判定<br>
+                            •少数派（ウルフ）に投票が一番多ければ多数派（市民）の勝ち
+                            ただし、多数派のお題を当てれたら少数派の逆転勝ち<br>
+                            •多数派（市民）に一番投票が多ければ少数派（ウルフ）の勝ち<br>
+                            •２人以上が同数又は全員が違う人を投票した場合、サドンデス開始<br>
+                            １分間話し合いの後、再度投票<br>
+                            勝敗がつくまで繰り返す<br>
+
+
+                        </div>
+                        <div class="modal-footer">
+
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">わかりました！</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <!-- その１------------------------------------------------- -->
-    <!-- Button trigger modal -->
-    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <!-- その１------------------------------------------------- -->
+            <!-- Button trigger modal -->
+            <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
         Launch demo modal
     </button> -->
-    
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel1">１番目の方</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                 <div class="modal-body">
-                    <div class="dropdown">
-                        <div class="row">
-                            <a class="col btn btn-warning dropdown-toggle " href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                <p class="">１番目の方のみ見てください <br>
-                                    確認したらもう一度クリックして閉じてください
 
-                                </p> 
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel1"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel1">１番目の方</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="dropdown">
+                                <div class="row">
+                                    <a class="col btn btn-warning dropdown-toggle " href="#" role="button"
+                                        id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <p class="">１番目の方のみ見てください <br>
+                                            確認したらもう一度クリックして閉じてください
+
+                                        </p>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <p class="p-word">あなたのお題は <span class="s-red" id="first_user">犬</span>です</p>
+                                        <div></div>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#example_Modal" id="second_quiz">２番目の方へ</button>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- その２------------------------------------------------- -->
+            <!-- Button trigger modal -->
+            <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#example_Modal">
+        Launch demo modal
+    </button> -->
+
+            <!-- Modal -->
+            <div class="modal fade" id="example_Modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">２番目の方</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="dropdown">
+                                <div class="row">
+                                    <a class="col btn btn-warning dropdown-toggle" href="#" role="button"
+                                        id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <p>２番目の方のみ見てください<br>
+                                            確認したらもう一度クリックして閉じてください
+
+                                        </p>
+                                    </a>
+
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <p class="p-word">あなたのお題は <span class="s-red" id="second_user">犬</span>です</p>
+                                        <div></div>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal3" id="tree_quiz">
+                                ３番目の方へ
+                            </button>
+                        </div>
+                        <div class="modal-footer">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- その３------------------------------------------------- -->
+            <!-- Button trigger modal -->
+            <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+        Launch demo modal
+    </button> -->
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">３番目の方</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="dropdown">
+                                <div class="row">
+                                    <a class="col btn btn-warning dropdown-toggle" href="#" role="button"
+                                        id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <p>３番目の方のみ見てください<br>
+                                            確認したらもう一度クリックして閉じてください
+                                        </p>
+
+                                    </a>
+
+                                    <ul class="col dropdown-menu " aria-labelledby="dropdownMenuLink">
+                                        <p class="p-word">あなたのお題は <span class="s-red" id="tree_user">オオカミ</span>です</p>
+                                        <div></div>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="nasu_wolf/index.html">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" id="changpage">
+
+                                    はじまり、はじまり
+                                </button>
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <p class="p-word">あなたのお題は <span class="s-red" id="first_user">犬</span>です</p>
-                                <div></div>
-                            </ul>
                         </div>
-                    </div>
-                    <div class="col">
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#example_Modal" id="second_quiz">２番目の方へ</button>
-                    </div>
-                    
-                </div>
-                <div class="modal-footer">
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- その２------------------------------------------------- -->
-    <!-- Button trigger modal -->
-    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#example_Modal">
-        Launch demo modal
-    </button> -->
-    
-    <!-- Modal -->
-    <div class="modal fade" id="example_Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">２番目の方</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="dropdown">
-                        <div class="row">
-                        <a class="col btn btn-warning dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            <p>２番目の方のみ見てください<br>
-                            確認したらもう一度クリックして閉じてください
+                        <div class="modal-footer">
 
-                            </p>        
-                        </a>
-                    
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <p class="p-word">あなたのお題は <span class="s-red" id="second_user">犬</span>です</p>
-                            <div></div>
-                        </ul>
                         </div>
                     </div>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3" id="tree_quiz">
-                        ３番目の方へ
-                    </button>
-                </div>
-                <div class="modal-footer">
-                    
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- その３------------------------------------------------- -->
-    <!-- Button trigger modal -->
-    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
-        Launch demo modal
-    </button> -->
-    
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">３番目の方</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="dropdown">
-                        <div class="row">
-                        <a class="col btn btn-warning dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            <p>３番目の方のみ見てください<br>
-                            確認したらもう一度クリックして閉じてください
-                            </p>
-                            
-                        </a>
-                            
-                        <ul class="col dropdown-menu " aria-labelledby="dropdownMenuLink">
-                            <p class="p-word">あなたのお題は <span class="s-red" id="tree_user">オオカミ</span>です</p>
-                            <div></div>
-                        </ul>
-                        </div>
-                    </div>
-                    <a href="nasu_wolf/index.html">
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" id="changpage">
-                        
-                        はじまり、はじまり
-                    </button>
-                    </a>
-                </div>
-                <div class="modal-footer">
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!-- プレイ人数ーーーーーーーーーーーーーーーーーーーーー -->
-    <div class="row my-3 text-center justify-content-center">
-        <!-- <div class="col-3">
+
+            <!-- プレイ人数ーーーーーーーーーーーーーーーーーーーーー -->
+            <div class="row my-3 text-center justify-content-center">
+                <!-- <div class="col-3">
 
         </div> -->
-        <div class="col-6 display-6">
-            <h２>
-                プレイ人数（合計）
-            </h２>
-        </div>
-        <!-- <div class="col-3">
+                <div class="col-6 display-6">
+                    <h２>
+                        プレイ人数（合計）
+                    </h２>
+                </div>
+                <!-- <div class="col-3">
 
         </div> -->
-    </div>
-    <!--  プレイ人数名前設定 ----------------------------->
-    
-    <div class="row justify-content-center ">
-        <div class="col-1 display-6">
-            <button class="button" id="down">－</button>
-        </div>
-         <div class="col-4 display-6">
-            <input type="text" value="3" class="inputtext" id="textbox">
-        </div> 
-        <div class="col-1 display-6">
-            <button class="button" id="up">＋</button>
-        </div> 
-       
-        
-        
+            </div>
+            <!--  プレイ人数名前設定 ----------------------------->
 
-    </div>
-    <button class="button resetbtn" id="reset">RESET</button>
-    <!-- <div class="row my-3">
+            <div class="row justify-content-center ">
+                <div class="col-1 display-6">
+                    <button class="button" id="down">－</button>
+                </div>
+                <div class="col-4 display-6">
+                    <input type="text" value="3" class="inputtext" id="textbox">
+                </div>
+                <div class="col-1 display-6">
+                    <button class="button" id="up">＋</button>
+                </div>
+
+
+
+
+            </div>
+            <button class="button resetbtn" id="reset">RESET</button>
+            <!-- <div class="row my-3">
         <div class="col-4">
     
         </div>
@@ -266,114 +275,122 @@
         <button type="button" class="btn btn-primary btn-lg">名前設定</button>
         </div>
     </div> -->
-    <!--  少数派多数派----------------------------------->
-    
-    <div class="gray">  
-    <!-- グレイに背景 -->
-   
-    <div class="container">
-        <div class="row my-3 justify-content-center text-center">
-            <div class="col-2 col-sm-2 display-6 "><p>少数派</p></div>
-            <div class="col-2 col-sm-2"></div>
-            <div class="col-2 col-sm-2 text-center"></div>
-            <div class="col-2 col-sm-2 text-center display-6"><p>多数派</p></div>
-        </div>
-        <div class="row justify-content-center text-center">
-            <div class="col-2 col-sm-2 text-center display-6">
-                <input type="text" value="1" id="minority" style="border: none;" class="minority_box">
-            </div>
-            <div class="col-2 col-sm-2 align-items-center"><button type="button" class="btn btn-primary btn-lg" id="minority_btn">＜</button></div>
-            <div class="col-2 col-sm-2 align-items-center"><button type="button" class="btn btn-primary btn-lg" id="majority_btn">＞</button></div>
-            <div class="col-2 col-sm-2 text-center display-6">
-                <input type="text" value="2" id="majority" style="border: none;" class="majority_box">
-            </div>
-        </div>
-        
-    </div>
-    <!--  少数派多数派ランダムチェック --------------------->
-    <div class="row my-3 justify-content-md-center">
-        <div class="col-3"> 
-    
-        </div>
-        <div class="col-3">
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
-                <label class="form-check-label" for="flexCheckIndeterminate">
-                    少数派多数派をランダムで決める
-                </label>
-            </div>
-        </div>
-        <div class="col-3">
-    
-        </div>
-    </div>
+            <!--  少数派多数派----------------------------------->
 
-    </div>
+            <div class="gray">
+                <!-- グレイに背景 -->
 
-    <!--  お題の内容 ------------------------------------>
-    <div class="row my-3 justify-content-md-center">
-        <div class="col-3">
-    
-        </div>
-        <div class="col-3">
-            <p class="display-6">お題の内容</p>
-        </div>
-        <div class="col-3">
-    
-        </div>
-    </div>
-    <!--  子供向け大人向け選択 ---------------------------->
-    <div class="row my-3 ">
-        <div class="radio justify-content-center">
-           
-            <div class="col-3 display-6">
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <label class="form-check-label" for="flexRadioDefault1">
-                    大人向け
-                </label>
-            </div>
-            </div>
-            <div class="col-3 display-6">
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <label class="form-check-label" for="flexRadioDefault1">
-                    子供向け
-                </label>
-            </div>
-           </div>
-           
-        </div>
-        
+                <div class="container">
+                    <div class="row my-3 justify-content-center text-center">
+                        <div class="col-2 col-sm-2 display-6 ">
+                            <p>少数派</p>
+                        </div>
+                        <div class="col-2 col-sm-2"></div>
+                        <div class="col-2 col-sm-2 text-center"></div>
+                        <div class="col-2 col-sm-2 text-center display-6">
+                            <p>多数派</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center text-center">
+                        <div class="col-2 col-sm-2 text-center display-6">
+                            <input type="text" value="1" id="minority" style="border: none;" class="minority_box">
+                        </div>
+                        <div class="col-2 col-sm-2 align-items-center"><button type="button"
+                                class="btn btn-primary btn-lg" id="minority_btn">＜</button></div>
+                        <div class="col-2 col-sm-2 align-items-center"><button type="button"
+                                class="btn btn-primary btn-lg" id="majority_btn">＞</button></div>
+                        <div class="col-2 col-sm-2 text-center display-6">
+                            <input type="text" value="2" id="majority" style="border: none;" class="majority_box">
+                        </div>
+                    </div>
 
-    </div>
-    <!--  大人向けの説明 --------------------------------->
-    <div class="row my-3 justify-content-center text-center">
-        <div class="col">
-        </div>
-        <div class="col-6">
-            <p>大人向け：一般向けお題から子供向け問題を無くしたバーションです。</p>
-        </div>
-        <div class="col">
-        </div>
-    </div>
-    <!--  恋愛系チェックボックス -------------------------->
-    <div class="row my-3 justify-content-center text-center">
-        <div class="col">
-            
-        </div>
-        <div class="col-5">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
-            <label class="form-check-label" for="flexCheckIndeterminate">
-                恋愛系・少しアダルト系な問題も出題する
-            </label>
-        </div>
-        <div class="col">
-        </div>
-    </div>
-     <!-- 問題を作る ---------------------------------- -->
+                </div>
+                <!--  少数派多数派ランダムチェック --------------------->
+                <div class="row my-3 justify-content-md-center">
+                    <div class="col-3">
 
-    <!-- <div class="gray">
+                    </div>
+                    <div class="col-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                            <label class="form-check-label" for="flexCheckIndeterminate">
+                                少数派多数派をランダムで決める
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-3">
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!--  お題の内容 ------------------------------------>
+            <div class="row my-3 justify-content-md-center">
+                <div class="col-3">
+
+                </div>
+                <div class="col-3">
+                    <p class="display-6">お題の内容</p>
+                </div>
+                <div class="col-3">
+
+                </div>
+            </div>
+            <!--  子供向け大人向け選択 ---------------------------->
+            <div class="row my-3 ">
+                <div class="radio justify-content-center">
+
+                    <div class="col-3 display-6">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="select_adaruto"
+                                value="0">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                大人向け
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-3 display-6">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="select_child"
+                                value="0">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                子供向け
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <!--  大人向けの説明 --------------------------------->
+            <div class="row my-3 justify-content-center text-center">
+                <div class="col">
+                </div>
+                <div class="col-6">
+                    <p>大人向け：一般向けお題から子供向け問題を無くしたバーションです。</p>
+                </div>
+                <div class="col">
+                </div>
+            </div>
+            <!--  恋愛系チェックボックス -------------------------->
+            <div class="row my-3 justify-content-center text-center">
+                <div class="col">
+
+                </div>
+                <div class="col-5">
+                    <input class="form-check-input" type="checkbox" value="" id="ero">
+                    <label class="form-check-label" for="flexCheckIndeterminate">
+                        恋愛系・少しアダルト系な問題も出題する
+                    </label>
+                </div>
+                <div class="col">
+                </div>
+            </div>
+            <!-- 問題を作る ---------------------------------- -->
+
+            <!-- <div class="gray">
        
     <div class="row my-3 justify-content-md-center">
         <div class="col">
@@ -400,21 +417,22 @@
         </div>
     </div>
     </div> -->
-    <!--  スタート -------------------------------------->
-    <div class="row my-3 justify-content-center">
-        
-        <div class="col-3">
-        <!-- <button type="button" class="btn btn-success btn-lg ">スタート</button> -->
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="game_start">
-            準備ができたらPUSH
-        </button>
+            <!--  スタート -------------------------------------->
+            <div class="row my-3 justify-content-center">
+
+                <div class="col-3">
+                    <!-- <button type="button" class="btn btn-success btn-lg ">スタート</button> -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        id="game_start">
+                        準備ができたらPUSH
+                    </button>
+                </div>
+
+            </div>
+
+            <!--  広告 ----------------------------------------->
+
         </div>
-        
-    </div>
-    
-    <!--  広告 ----------------------------------------->
-    
-</div>
 
     </div>
 
@@ -447,7 +465,7 @@
         // });
 
 
-    (() => {
+        (() => {
             //HTMLのid値を使って以下のDOM要素を取得
             const downbutton = document.getElementById('down');
             const upbutton = document.getElementById('up');
@@ -462,7 +480,7 @@
                 if (text.value >= 4) {
                     text.value--;
                     majority_text.value--;
-                } 
+                }
 
             });
 
@@ -485,16 +503,16 @@
             })
 
             // 少数派ボタンを押すと増える
-            $('#minority_btn').on('click',function() {
+            $('#minority_btn').on('click', function () {
                 let text_division = text.value / 2 - 1;
                 console.log(text_division);
-                if(Math.floor(minority_text.value) < text_division) {
+                if (Math.floor(minority_text.value) < text_division) {
                     minority_text.value++;
                     majority_text.value--;
                 }
             });
             // 多数派ボタン押すと増える
-            $('#majority_btn').on('click',function() {
+            $('#majority_btn').on('click', function () {
                 let text_division = text.value / 2 - 1;
                 console.log(text_division);
                 if (Math.floor(majority_text.value) > text_division && Math.floor(majority_text.value) < text.value && Math.floor(minority_text.value) > 1) {
@@ -502,7 +520,6 @@
                     minority_text.value--;
                 }
             })
-
 
         })();
 
@@ -518,14 +535,14 @@
         //     console.log("")
         // })
 
-        
-
-        
 
 
-    //   const tasu = $('#textbox').val();
-    //   console.log(tasu);
-    /* ----------配列の中身をシャッフル---------- */
+
+
+
+        //   const tasu = $('#textbox').val();
+        //   console.log(tasu);
+        /* ----------配列の中身をシャッフル---------- */
         //参考サイト'https://gray-code.com/javascript/shuffle-for-item-of-array/'
         function arrayShuffle(array) {
             for (let i = (array.length - 1); 0 < i; i--) {
@@ -545,7 +562,7 @@
         for (let i = 0; i < 1; i++) {
             console.log(arrayShuffle(numbers));
         } */
-        // 問題文作成
+        // 大人向け問題文作成
         const quiz = [
             ['イヌ', 'イヌ', 'オオカミ'],
             ['イヌ', 'オオカミ', 'オオカミ'],
@@ -568,38 +585,214 @@
             ['サングラス', 'サングラス', 'ゴーグル'],
             ['サングラス', 'ゴーグル', 'ゴーグル'],
         ];
-        // pushボタン押すとイベント発生
-        $('#game_start').on('click', function () {
-            // console.log('nasu');
-            // 問題を1回だけランダムに表示
-            for (let i = 0; i < 1; i++) {
-                console.log(arrayShuffle(quiz));
-            }
 
-            const select_quiz = quiz[0];
-            // 多次元配列の中身をシャッフル
-            for (let i = 0; i < 1; i++) {
-                console.log(arrayShuffle(select_quiz));
-                console.log(arrayShuffle(select_quiz[[0]]));
-            }
-            // 1番目のお題を表示
-            $('#first_user').text(select_quiz[[0]]);
+        // 子供向けお題作成
+        const quiz_child = [
+            ['いぬ', 'いぬ', 'ねこ'],
+            ['いぬ', 'ねこ', 'ねこ'],
+            ['たこ', 'たこ', 'いか'],
+            ['たこ', 'いか', 'いか'],
+            ['りんご', 'りんご', 'みかん'],
+            ['りんご', 'みかん', 'みかん'],
+            ['おはな', 'おはな', 'たいよう'],
+            ['おはな', 'たいよう', 'たいよう'],
+            ['へび', 'へび', 'みみず'],
+            ['へび', 'みみず', 'みみず'],
+            ['かめ', 'かめ', 'かえる'],
+            ['かめ', 'かえる', 'かえる'],
+            ['にんげん', 'にんげん', 'うちゅうじん'],
+            ['にんげん', 'うちゅうじん', 'うちゅうじん'],
+            ['パン', 'パン', 'ケーキ'],
+            ['パン', 'ケーキ', 'ケーキ'],
+            ['かさ', 'かさ', 'きのこ'],
+            ['かさ', 'きのこ', 'きのこ'],
+        ];
+        // アダルトな問題も表示
+        const quiz_ero = [
+            ['もも', 'お尻', 'もも'],
+            ['お尻', 'お尻', 'もも'],
+            ['恋', '恋', '愛'],
+            ['恋', '愛', '愛'],
+            ['理想', '理想', '現実'],
+            ['理想', '現実', '現実'],
+            ['カップル', 'カップル', 'バカップル'],
+            ['カップル', 'バカップル', 'バカップル'],
+            ['バニーカール', 'バニーカール', 'ストリッパー'],
+            ['バニーカール', 'ストリッパー', 'ストリッパー'],
+            ['パンツ', 'パンツ', 'Tバック'],
+            ['パンツ', 'Tバック', 'Tバック'],
+            ['ミニスカ', 'ミニスカ', 'ショーパン'],
+            ['ミニスカ', 'ショーパン', 'ショーパン'],
+            ['おっぱい', 'おっぱい', '山'],
+            ['おっぱい', '山', '山'],
+        ]
+        // 大人のボタンが押されたときに配列追加
+        adaruto_arry = [];
+        child_arry = [];
+        $('#select_adaruto').on('click', function () {
+            adaruto_arry.push(length);
+            console.log(adaruto_arry);
+            child_arry.splice(0) // 子供の配列を0に
+            console.log(child_arry);
+        });
+        // 子供のボタンが押されたときに配列追加
+        $('#select_child').on('click', function () {
+            child_arry.push(length);
+            console.log(child_arry);
+            adaruto_arry.splice(0) // 大人の配列を0に
+            console.log(adaruto_arry);
+        });
+        // アダルト押したら配列増える
+        const ero_array = [];
+        $('#ero').on('click', function () {
+            ero_array.push(length);
+            // console.log('ero'+ero_array);
+            // アダルトの判別を0,1で行う
+            const division_ero = ero_array.length % 2
+            console.log(division_ero);
+            if (division_ero == 0) {
+                console.log('エロなし');
+                // pushボタン押すとイベント発生
+                $('#game_start').on('click', function () {
+                    // console.log('nasu');
+                    // 大人のボタンを選択していたら
+                    if (adaruto_arry.length >= 1) {
+                        console.log('大人')
+                        // 問題を1回だけランダムに表示
+                        for (let i = 0; i < 1; i++) {
+                            console.log(arrayShuffle(quiz));
+                        }
 
-            // 2番目の方へ押すとイベント発生
-            $('#second_quiz').on('click', function () {
-                // console.log('hai');
-                console.log(arrayShuffle(select_quiz[[1]]));
-                $('#second_user').text(select_quiz[[1]]);
+                        const select_quiz = quiz[0];
+                        // 多次元配列の中身をシャッフル
+                        for (let i = 0; i < 1; i++) {
+                            console.log(arrayShuffle(select_quiz));
+                            console.log(arrayShuffle(select_quiz[[0]]));
+                        }
+                        // 1番目のお題を表示
+                        $('#first_user').text(select_quiz[[0]]);
 
-                // 3番目の方へ押すとイベント発生
-                $('#tree_quiz').on('click', function () {
-                    console.log(arrayShuffle(select_quiz[[2]]));
-                    $('#tree_user').text(select_quiz[[2]]);
+                        // 2番目の方へ押すとイベント発生
+                        $('#second_quiz').on('click', function () {
+                            // console.log('hai');
+                            console.log(arrayShuffle(select_quiz[[1]]));
+                            $('#second_user').text(select_quiz[[1]]);
+
+                            // 3番目の方へ押すとイベント発生
+                            $('#tree_quiz').on('click', function () {
+                                console.log(arrayShuffle(select_quiz[[2]]));
+                                $('#tree_user').text(select_quiz[[2]]);
+                            });
+                        });
+                    } else {
+                        console.log('子供')
+                        // 子供用の問題を表示
+                        // 問題を1回だけランダムに表示
+                        for (let i = 0; i < 1; i++) {
+                            console.log(arrayShuffle(quiz_child));
+                        }
+
+                        const select_quiz = quiz_child[0];
+                        // 多次元配列の中身をシャッフル
+                        for (let i = 0; i < 1; i++) {
+                            console.log(arrayShuffle(select_quiz));
+                            console.log(arrayShuffle(select_quiz[[0]]));
+                        }
+                        // 1番目のお題を表示
+                        $('#first_user').text(select_quiz[[0]]);
+
+                        // 2番目の方へ押すとイベント発生
+                        $('#second_quiz').on('click', function () {
+                            // console.log('hai');
+                            console.log(arrayShuffle(select_quiz[[1]]));
+                            $('#second_user').text(select_quiz[[1]]);
+
+                            // 3番目の方へ押すとイベント発生
+                            $('#tree_quiz').on('click', function () {
+                                console.log(arrayShuffle(select_quiz[[2]]));
+                                $('#tree_user').text(select_quiz[[2]]);
+                            });
+                        });
+                    };
+
                 });
-            });
+            } else {
+                console.log('エロあり');
+                // アダルトな配列も表示
+                const aduruto_ero = quiz.concat(quiz_ero);
+                console.log(aduruto_ero);
+                const child_ero = quiz_child.concat(quiz_ero)
+                console.log(child_ero);
+                // pushボタン押すとイベント発生
+                $('#game_start').on('click', function () {
+                    // console.log('nasu');
+                    // 大人のボタンを選択していたら
+                    if (adaruto_arry.length >= 1) {
+                        console.log('大人')
+                        // 問題を1回だけランダムに表示
+                        for (let i = 0; i < 1; i++) {
+                            console.log(arrayShuffle(aduruto_ero));
+                        }
+
+                        const select_quiz = aduruto_ero[0];
+                        // 多次元配列の中身をシャッフル
+                        for (let i = 0; i < 1; i++) {
+                            console.log(arrayShuffle(select_quiz));
+                            console.log(arrayShuffle(select_quiz[[0]]));
+                        }
+                        // 1番目のお題を表示
+                        $('#first_user').text(select_quiz[[0]]);
+
+                        // 2番目の方へ押すとイベント発生
+                        $('#second_quiz').on('click', function () {
+                            // console.log('hai');
+                            console.log(arrayShuffle(select_quiz[[1]]));
+                            $('#second_user').text(select_quiz[[1]]);
+
+                            // 3番目の方へ押すとイベント発生
+                            $('#tree_quiz').on('click', function () {
+                                console.log(arrayShuffle(select_quiz[[2]]));
+                                $('#tree_user').text(select_quiz[[2]]);
+                            });
+                        });
+                    } else {
+                        console.log('子供')
+                        // 子供用の問題を表示
+                        // 問題を1回だけランダムに表示
+                        for (let i = 0; i < 1; i++) {
+                            console.log(arrayShuffle(child_ero));
+                        }
+
+                        const select_quiz = child_ero[0];
+                        // 多次元配列の中身をシャッフル
+                        for (let i = 0; i < 1; i++) {
+                            console.log(arrayShuffle(select_quiz));
+                            console.log(arrayShuffle(select_quiz[[0]]));
+                        }
+                        // 1番目のお題を表示
+                        $('#first_user').text(select_quiz[[0]]);
+
+                        // 2番目の方へ押すとイベント発生
+                        $('#second_quiz').on('click', function () {
+                            // console.log('hai');
+                            console.log(arrayShuffle(select_quiz[[1]]));
+                            $('#second_user').text(select_quiz[[1]]);
+
+                            // 3番目の方へ押すとイベント発生
+                            $('#tree_quiz').on('click', function () {
+                                console.log(arrayShuffle(select_quiz[[2]]));
+                                $('#tree_user').text(select_quiz[[2]]);
+                            });
+                        });
+                    };
+
+                });
+            }
         });
 
-    
+
+
+
 
     </script>
 </body>
