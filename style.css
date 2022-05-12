@@ -55,6 +55,8 @@ h1{
     background: lightgray;
 }
 
+
+<<<<<<< HEAD
 /* canvas-------------------------------------------------------- */
 .can_text a{
     font-size: 2rem;
@@ -80,3 +82,17 @@ h1{
     font-size: 1.5rem;
     color: red;
 }
+
+/* index.htmlの調整-------------------------------------------------------------------------------- */
+/* .minority {
+    outline: none;
+}
+.majority {
+    outline: none;
+}
+.minority_box {
+    background: none;
+}
+.majority_box{
+    background: none;
+} */

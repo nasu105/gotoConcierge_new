@@ -215,16 +215,26 @@ function draw(x, y) {
 }
 
 const answer = '手を止めてください。これ以上書き込むのは違反です。さて、あなた方3名の中に潜んでいるウルフを見つけ出したください。2分後に投票をしてください。'
-
+//const my_audio = new Audio("")
 // できたボタン押したら次のイベント
 $('#end').on('click', function () {
     // console.log('できた')
-    $('#discussion').text(answer);
+  //  $('#discussion').text(answer); 
+    // n秒後に音ならす
+  //  my_audio.currentTime = 0; // 再生位置を位置を先頭に戻す
+  //  my_audio.play(); // サウンドを再生
     // n秒後に投票ボタン現れる
     window.setTimeout(function () {
         alert('話し合い終了！誰がウルフか投票お願いします。');
     }, 2000);
 });
+
+// $('#end').on('click', function () {
+//     let music = function () {
+//         $('#music').html(<audio autoplay src="audio/countdown.mp3"></audio>)
+//     }
+//     setTimeout(music, 2000);
+// });
 /* ----------配列の中身をシャッフル---------- */
 //参考サイト'https://gray-code.com/javascript/shuffle-for-item-of-array/'
 function arrayShuffle(array) {
